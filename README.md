@@ -20,23 +20,69 @@ LTX-2 models are available in various formats including full weights, transforme
 ### GGUF Quantized Models
 These models are optimized for lower memory usage. Note that in ComfyUI, these are typically loaded as transformer-only models.
 
-#### **Unsloth GGUFs**
-| File Name | Size | Download |
-| :--- | :--- | :--- |
-| `ltx-2-19b-dev-BF16.gguf` | 37.8 GB | [Download](https://huggingface.co/unsloth/LTX-2-GGUF/resolve/main/ltx-2-19b-dev-BF16.gguf?download=true) |
-| `ltx-2-19b-dev-Q8_0.gguf` | 20.4 GB | [Download](https://huggingface.co/unsloth/LTX-2-GGUF/resolve/main/ltx-2-19b-dev-Q8_0.gguf?download=true) |
-| `ltx-2-19b-dev-Q6_K.gguf` | 16.0 GB | [Download](https://huggingface.co/unsloth/LTX-2-GGUF/resolve/main/ltx-2-19b-dev-Q6_K.gguf?download=true) |
-| `ltx-2-19b-dev-Q4_K_M.gguf` | 12.8 GB | [Download](https://huggingface.co/unsloth/LTX-2-GGUF/resolve/main/ltx-2-19b-dev-Q4_K_M.gguf?download=true) |
-| `ltx-2-19b-dev-Q4_0.gguf` | 11.3 GB | [Download](https://huggingface.co/unsloth/LTX-2-GGUF/resolve/main/ltx-2-19b-dev-Q4_0.gguf?download=true) |
+#### [QuantStack](https://huggingface.co/QuantStack/LTX-2-GGUF)
 
-#### **Vantage AI GGUFs (Dev)**
-| File Name | Size | Download |
-| :--- | :--- | :--- |
-| `ltx-2-19b-dev-Q8_0.gguf` | 20.4 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/dev/ltx-2-19b-dev-Q8_0.gguf?download=true) |
-| `ltx-2-19b-dev-Q6_K.gguf` | 15.9 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/dev/ltx-2-19b-dev-Q6_K.gguf?download=true) |
-| `ltx-2-19b-dev-Q4_K_M.gguf` | 12.8 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/dev/ltx-2-19b-dev-Q4_K_M.gguf?download=true) |
+| Model | Quant | Size | Download |
+| :--- | :---: | :---: | :---: |
+| LTX-2-dev | Q2_K | 8.03 GB | [Download](https://huggingface.co/QuantStack/LTX-2-GGUF/resolve/main/LTX-2-dev/LTX-2-dev-Q2_K.gguf) |
+| LTX-2-dev | Q3_K_M | 10.3 GB | [Download](https://huggingface.co/QuantStack/LTX-2-GGUF/resolve/main/LTX-2-dev/LTX-2-dev-Q3_K_M.gguf) |
+| LTX-2-dev | Q3_K_S | 9.57 GB | [Download](https://huggingface.co/QuantStack/LTX-2-GGUF/resolve/main/LTX-2-dev/LTX-2-dev-Q3_K_S.gguf) |
+| LTX-2-dev | Q4_K_M | 13.4 GB | [Download](https://huggingface.co/QuantStack/LTX-2-GGUF/resolve/main/LTX-2-dev/LTX-2-dev-Q4_K_M.gguf) |
+| LTX-2-dev | Q4_K_S | 12.3 GB | [Download](https://huggingface.co/QuantStack/LTX-2-GGUF/resolve/main/LTX-2-dev/LTX-2-dev-Q4_K_S.gguf) |
+| LTX-2-dev | Q5_K_M | 15 GB | [Download](https://huggingface.co/QuantStack/LTX-2-GGUF/resolve/main/LTX-2-dev/LTX-2-dev-Q5_K_M.gguf) |
+| LTX-2-dev | Q5_K_S | 14.2 GB | [Download](https://huggingface.co/QuantStack/LTX-2-GGUF/resolve/main/LTX-2-dev/LTX-2-dev-Q5_K_S.gguf) |
+| LTX-2-dev | Q6_K | 16.6 GB | [Download](https://huggingface.co/QuantStack/LTX-2-GGUF/resolve/main/LTX-2-dev/LTX-2-dev-Q6_K.gguf) |
+| LTX-2-dev | Q8_0 | 21.1 GB | [Download](https://huggingface.co/QuantStack/LTX-2-GGUF/resolve/main/LTX-2-dev/LTX-2-dev-Q8_0.gguf) |
 
-*   **Other GGUF Sources:** [QuantStack/LTX-2-GGUF](https://huggingface.co/QuantStack/LTX-2-GGUF)
+#### [Unsloth GGUFs](https://huggingface.co/unsloth/LTX-2-GGUF)
+
+| Model | Quant | Size | Download |
+| :--- | :--- | :--- | :--- |
+| ltx-2-19b-dev | BF16 | 37.8 GB | [Download](https://huggingface.co/unsloth/LTX-2-GGUF/resolve/main/ltx-2-19b-dev-BF16.gguf) |
+| ltx-2-19b-dev | F16 | 37.8 GB | [Download](https://huggingface.co/unsloth/LTX-2-GGUF/resolve/main/ltx-2-19b-dev-F16.gguf) |
+| ltx-2-19b-dev | Q2_K | 8.1 GB | [Download](https://huggingface.co/unsloth/LTX-2-GGUF/resolve/main/ltx-2-19b-dev-Q2_K.gguf) |
+| ltx-2-19b-dev | Q3_K_L | 10.7 GB | [Download](https://huggingface.co/unsloth/LTX-2-GGUF/resolve/main/ltx-2-19b-dev-Q3_K_L.gguf) |
+| ltx-2-19b-dev | Q3_K_M | 10.1 GB | [Download](https://huggingface.co/unsloth/LTX-2-GGUF/resolve/main/ltx-2-19b-dev-Q3_K_M.gguf) |
+| ltx-2-19b-dev | Q3_K_S | 9.47 GB | [Download](https://huggingface.co/unsloth/LTX-2-GGUF/resolve/main/ltx-2-19b-dev-Q3_K_S.gguf) |
+| ltx-2-19b-dev | Q4_0 | 11.3 GB | [Download](https://huggingface.co/unsloth/LTX-2-GGUF/resolve/main/ltx-2-19b-dev-Q4_0.gguf) |
+| ltx-2-19b-dev | Q4_1 | 12.3 GB | [Download](https://huggingface.co/unsloth/LTX-2-GGUF/resolve/main/ltx-2-19b-dev-Q4_1.gguf) |
+| ltx-2-19b-dev | Q4_K_M | 12.8 GB | [Download](https://huggingface.co/unsloth/LTX-2-GGUF/resolve/main/ltx-2-19b-dev-Q4_K_M.gguf) |
+| ltx-2-19b-dev | Q4_K_S | 11.9 GB | [Download](https://huggingface.co/unsloth/LTX-2-GGUF/resolve/main/ltx-2-19b-dev-Q4_K_S.gguf) |
+| ltx-2-19b-dev | Q5_0 | 13.7 GB | [Download](https://huggingface.co/unsloth/LTX-2-GGUF/resolve/main/ltx-2-19b-dev-Q5_0.gguf) |
+| ltx-2-19b-dev | Q5_1 | 14.6 GB | [Download](https://huggingface.co/unsloth/LTX-2-GGUF/resolve/main/ltx-2-19b-dev-Q5_1.gguf) |
+| ltx-2-19b-dev | Q5_K_M | 14.3 GB | [Download](https://huggingface.co/unsloth/LTX-2-GGUF/resolve/main/ltx-2-19b-dev-Q5_K_M.gguf) |
+| ltx-2-19b-dev | Q5_K_S | 13.6 GB | [Download](https://huggingface.co/unsloth/LTX-2-GGUF/resolve/main/ltx-2-19b-dev-Q5_K_S.gguf) |
+| ltx-2-19b-dev | Q6_K | 16 GB | [Download](https://huggingface.co/unsloth/LTX-2-GGUF/resolve/main/ltx-2-19b-dev-Q6_K.gguf) |
+| ltx-2-19b-dev | Q8_0 | 20.4 GB | [Download](https://huggingface.co/unsloth/LTX-2-GGUF/resolve/main/ltx-2-19b-dev-Q8_0.gguf) |
+
+#### [Vantage AI GGUFs](https://huggingface.co/vantagewithai/)
+
+| Model | Quant | Size | Download |
+| :--- | :--- | :--- | :--- |
+| ltx-2-19b-dev | Q3_K_M | 9.96 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/dev/ltx-2-19b-dev-Q3_K_M.gguf) |
+| ltx-2-19b-dev | Q3_K_S | 9.28 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/dev/ltx-2-19b-dev-Q3_K_S.gguf) |
+| ltx-2-19b-dev | Q4_0 | 11.6 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/dev/ltx-2-19b-dev-Q4_0.gguf) |
+| ltx-2-19b-dev | Q4_1 | 12.4 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/dev/ltx-2-19b-dev-Q4_1.gguf) |
+| ltx-2-19b-dev | Q4_K_M | 12.8 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/dev/ltx-2-19b-dev-Q4_K_M.gguf) |
+| ltx-2-19b-dev | Q4_K_S | 11.8 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/dev/ltx-2-19b-dev-Q4_K_S.gguf) |
+| ltx-2-19b-dev | Q5_0 | 13.6 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/dev/ltx-2-19b-dev-Q5_0.gguf) |
+| ltx-2-19b-dev | Q5_1 | 14.5 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/dev/ltx-2-19b-dev-Q5_1.gguf) |
+| ltx-2-19b-dev | Q5_K_M | 14.4 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/dev/ltx-2-19b-dev-Q5_K_M.gguf) |
+| ltx-2-19b-dev | Q5_K_S | 13.5 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/dev/ltx-2-19b-dev-Q5_K_S.gguf) |
+| ltx-2-19b-dev | Q6_K | 15.9 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/dev/ltx-2-19b-dev-Q6_K.gguf) |
+| ltx-2-19b-dev | Q8_0 | 20.4 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/dev/ltx-2-19b-dev-Q8_0.gguf) |
+| ltx-2-19b-distilled | Q3_K_M | 9.96 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/distilled/ltx-2-19b-distilled-Q3_K_M.gguf) |
+| ltx-2-19b-distilled | Q3_K_S | 9.28 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/distilled/ltx-2-19b-distilled-Q3_K_S.gguf) |
+| ltx-2-19b-distilled | Q4_0 | 11.6 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/distilled/ltx-2-19b-distilled-Q4_0.gguf) |
+| ltx-2-19b-distilled | Q4_1 | 12.4 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/distilled/ltx-2-19b-distilled-Q4_1.gguf) |
+| ltx-2-19b-distilled | Q4_K_M | 12.8 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/distilled/ltx-2-19b-distilled-Q4_K_M.gguf) |
+| ltx-2-19b-distilled | Q4_K_S | 11.8 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/distilled/ltx-2-19b-distilled-Q4_K_S.gguf) |
+| ltx-2-19b-distilled | Q5_0 | 13.6 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/distilled/ltx-2-19b-distilled-Q5_0.gguf) |
+| ltx-2-19b-distilled | Q5_1 | 14.5 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/distilled/ltx-2-19b-distilled-Q5_1.gguf) |
+| ltx-2-19b-distilled | Q5_K_M | 14.4 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/distilled/ltx-2-19b-distilled-Q5_K_M.gguf) |
+| ltx-2-19b-distilled | Q5_K_S | 13.5 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/distilled/ltx-2-19b-distilled-Q5_K_S.gguf) |
+| ltx-2-19b-distilled | Q6_K | 15.9 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/distilled/ltx-2-19b-distilled-Q6_K.gguf) |
+| ltx-2-19b-distilled | Q8_0 | 20.4 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/distilled/ltx-2-19b-distilled-Q8_0.gguf) |
 
 ### Distilled LoRA
 
