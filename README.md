@@ -6,10 +6,17 @@ A curated list of models, text encoders, and tools for the LTX-2 video generatio
 
 LTX-2 models are available in various formats including full weights, transformers-only, and GGUF quantizations for efficient inference.
 
-### Official & Full Models
+### Checkpoints
 * **[Lightricks/LTX-2](https://huggingface.co/Lightricks/LTX-2)** - Official repository.
-* **[Kijai/LTXV2_comfy](https://huggingface.co/Kijai/LTXV2_comfy/blob/main/diffusion_models/ltx-2-19b-dev_transformer_only_bf16.safetensors)** - BF16 Transformer Only.
 
+| Name | Precision | Size | Download |
+| :--- | :---: | :---: | :---: |
+| `dev` | bf16 | 43.3 GB | [Link](https://huggingface.co/Lightricks/LTX-2/blob/main/ltx-2-19b-dev.safetensors)
+| `dev` | fp8 | 27.1 GB | [Link](https://huggingface.co/Lightricks/LTX-2/blob/main/ltx-2-19b-dev-fp8.safetensors)
+| `dev` | fp4 | 20 GB | [Link](https://huggingface.co/Lightricks/LTX-2/blob/main/ltx-2-19b-dev-fp4.safetensors)
+| `distilled` | bf16 | 43.3 GB | [Link](https://huggingface.co/Lightricks/LTX-2/blob/main/ltx-2-19b-distilled.safetensors)
+| `distilled` | fp8 | 27.1 GB | [Link](https://huggingface.co/Lightricks/LTX-2/blob/main/ltx-2-19b-distilled-fp8.safetensors)
+  
 ### GGUF Quantized Models
 These models are optimized for lower memory usage. Note that in ComfyUI, these are typically loaded as transformer-only models.
 
@@ -36,9 +43,9 @@ These models are optimized for lower memory usage. Note that in ComfyUI, these a
 | Rank | Precision | Size | Download |
 | :--- | :---: | :---: | :---: |
 | `384` | bf16 | 7.67 GB | [Link](https://huggingface.co/Lightricks/LTX-2/resolve/main/ltx-2-19b-distilled-lora-384.safetensors)
-| `242` | bf16 | 4.88 GB | [Link](https://huggingface.co/Kijai/LTXV2_comfy/blob/main/loras/ltx-2-19b-distilled-lora-resized_dynamic_fro095_avg_rank_242_bf16.safetensors) |
-| `175` | bf16 | 3.58 GB | [Link](https://huggingface.co/Kijai/LTXV2_comfy/blob/main/loras/ltx-2-19b-distilled-lora_resized_dynamic_fro09_avg_rank_175_bf16.safetensors) |
-| `242` | fp8 | 1.79 GB | [Link](https://huggingface.co/Kijai/LTXV2_comfy/blob/main/loras/ltx-2-19b-distilled-lora_resized_dynamic_fro09_avg_rank_175_fp8.safetensors) |
+| `242` | bf16 | 4.88 GB | [Link](https://huggingface.co/Kijai/LTXV2_comfy/resolve/main/loras/ltx-2-19b-distilled-lora-resized_dynamic_fro095_avg_rank_242_bf16.safetensors) |
+| `175` | bf16 | 3.58 GB | [Link](https://huggingface.co/Kijai/LTXV2_comfy/resolve/main/loras/ltx-2-19b-distilled-lora_resized_dynamic_fro09_avg_rank_175_bf16.safetensors) |
+| `175` | fp8 | 1.79 GB | [Link](https://huggingface.co/Kijai/LTXV2_comfy/resolve/main/loras/ltx-2-19b-distilled-lora_resized_dynamic_fro09_avg_rank_175_fp8.safetensors) |
 
 ---
 
