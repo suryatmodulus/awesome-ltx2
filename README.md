@@ -2,6 +2,12 @@
 
 A curated list of models, text encoders, and tools for the LTX-2 video generation suite.
 
+## Intro
+
+* [LTX-2: A New Chapter in Generative AI](https://website.ltx.video/blog/introducing-ltx-2)
+* ComfyUI official [blogpost](https://blog.comfy.org/p/ltx-2-open-source-audio-video-ai)
+* [Prompting Guide for LTX-2](https://ltx.io/model/model-blog/prompting-guide-for-ltx-2)
+
 ## Models
 
 LTX-2 models are available in various formats including full weights, transformers-only, and GGUF quantizations for efficient inference.
