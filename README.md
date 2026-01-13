@@ -8,6 +8,8 @@ A curated list of models, text encoders, and tools for the LTX-2 video generatio
 * ComfyUI official [blogpost](https://blog.comfy.org/p/ltx-2-open-source-audio-video-ai)
 * [Prompting Guide for LTX-2](https://ltx.io/model/model-blog/prompting-guide-for-ltx-2)
 
+* »» [LTX-2 in ComfyUI Chattable KB](https://notebooklm.google.com/notebook/4f07f98c-75b6-4278-bde1-906f9899b60c)
+
 ## Models
 
 LTX-2 models are available in various formats including full weights, transformers-only, and GGUF quantizations for efficient inference.
