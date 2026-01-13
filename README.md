@@ -23,6 +23,13 @@ LTX-2 models are available in various formats including full weights, transforme
 | `ltx-2-19b distilled` | bf16 | 43.3 GB | [Link](https://huggingface.co/Lightricks/LTX-2/resolve/main/ltx-2-19b-distilled.safetensors)
 | `ltx-2-19b distilled` | fp8 | 27.1 GB | [Link](https://huggingface.co/Lightricks/LTX-2/resolve/main/ltx-2-19b-distilled-fp8.safetensors)
 
+
+Quantized to fp8_e5m2 to support older Triton with older Pytorch on 30 series GPUs. For WangGP in Pinokio
+
+| Name | Precision | Size | Download |
+| :--- | :---: | :---: | :---: |
+| `ltx-2-19b dev` | fp8_e5m2 | 27.1 GB | [Link](https://huggingface.co/progmars/ltx-2-19b-dev-fp8_e5m2)
+
 #### **Distilled LoRA**
 
 | Rank | Precision | Size | Download |
@@ -40,8 +47,7 @@ Required for current two-stage pipeline implementations in this repository. Down
 Required for current two-stage pipeline implementations in this repository. Download to `COMFYUI_ROOT_FOLDER/models/latent_upscale_models` folder.
   * [`ltx-2-temporal-upscaler-x2-1.0.safetensors`](https://huggingface.co/Lightricks/LTX-2/resolve/main/ltx-2-temporal-upscaler-x2-1.0.safetensors)
 
-
----
+<p id="gguf" align="center">══════════════════════════════════</p>  
 
 ### GGUF Quantized Models
 These models are optimized for lower memory usage. Note that in ComfyUI, these are typically loaded as transformer-only models.
@@ -124,8 +130,8 @@ These models are optimized for lower memory usage. Note that in ComfyUI, these a
 | ltx-2-19b-distilled | Q8_0 | 20.4 GB | [Download](https://huggingface.co/vantagewithai/LTX-2-GGUF/resolve/main/distilled/ltx-2-19b-distilled-Q8_0.gguf) |
 
 </details>
-  
----
+
+<p id="text-encoder" align="center">◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆</p>  
 
 ## Text Encoders
 
@@ -194,7 +200,7 @@ Models by [DreamFast](https://huggingface.co/DreamFast/gemma-3-12b-it-heretic)
 
 </details>
 
----
+<p id="split" align="center">◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆</p>  
 
 ## Separated Components
 
@@ -206,17 +212,17 @@ Separated LTX2 checkpoint by [Kijai](https://huggingface.co/Kijai/LTXV2_comfy), 
 | :--- | :---: | :---: | :---: |
 | `ltx-2-19b dev` | bf16 | 37.8 GB | [Kijai](https://huggingface.co/Kijai/LTXV2_comfy/resolve/main/diffusion_models/ltx-2-19b-dev_transformer_only_bf16.safetensors), [Vantage](https://huggingface.co/vantagewithai/LTX-2-Split/resolve/main/model/ltx-2-19b-dev-model.safetensors) |
 | `ltx-2-19b dev` | fp8 | 21.6 GB | [Kijai](https://huggingface.co/Kijai/LTXV2_comfy/resolve/main/diffusion_models/ltx-2-19b-dev-fp8_transformer_only.safetensors), [Vantage](https://huggingface.co/vantagewithai/LTX-2-Split/resolve/main/model/ltx-2-19b-dev-model-fp8.safetensors) |
-| `ltx-2-19b distilled` | bf16 | 37.8 GB | [Vantage](https://huggingface.co/vantagewithai/LTX-2-Split/resolve/main/model/ltx-2-19b-distilled-model.safetensors) |
+| `ltx-2-19b distilled` | bf16 | 37.8 GB | [Kijai](https://huggingface.co/Kijai/LTXV2_comfy/resolve/main/diffusion_models/ltx-2-19b-distilled_transformer_only_bf16.safetensors?download=true), [Vantage](https://huggingface.co/vantagewithai/LTX-2-Split/resolve/main/model/ltx-2-19b-distilled-model.safetensors) |
 | `ltx-2-19b distilled` | fp8 | 21.6 GB | [Kijai](https://huggingface.co/Kijai/LTXV2_comfy/resolve/main/diffusion_models/ltx-2-19b-distilled-fp8_transformer_only.safetensors), [Vantage](https://huggingface.co/vantagewithai/LTX-2-Split/resolve/main/model/ltx-2-19b-distilled-model-fp8.safetensors) |
-
-
 
 
 ### VAE (Video & Audio)
 | Component | Precision | Size | Download Link |
 | :--- | :---: | :---: | :---: |
-| **Video VAE** | BF16 | 2.49 GB | [Kijai](https://huggingface.co/Kijai/LTXV2_comfy/resolve/main/VAE/LTX2_video_vae_bf16.safetensors?download=true), [Vantage](https://huggingface.co/vantagewithai/LTX-2-Split/resolve/main/vae/ltx-2-19b-VAE.safetensors) |
+| **Video VAE** | BF16 | 2.45 GB | [Kijai](https://huggingface.co/Kijai/LTXV2_comfy/resolve/main/VAE/LTX2_video_vae_bf16.safetensors) |
+| Video VAE old | BF16 | 2.49 GB | [Kijai](https://huggingface.co/Kijai/LTXV2_comfy/resolve/main/VAE/LTX2_video_vae_old_bf16.safetensors), [Vantage](https://huggingface.co/vantagewithai/LTX-2-Split/resolve/main/vae/ltx-2-19b-VAE.safetensors) |
 | **Audio VAE** | BF16 | 218 MB | [Kijai](https://huggingface.co/Kijai/LTXV2_comfy/resolve/main/VAE/LTX2_audio_vae_bf16.safetensors?download=true), [Vantage](https://huggingface.co/vantagewithai/LTX-2-Split/resolve/main/audio_vae/ltx-2-19b-audio_vae.safetensors) |
+
 
 
 ### Embedding Connectors
@@ -226,7 +232,7 @@ Separated LTX2 checkpoint by [Kijai](https://huggingface.co/Kijai/LTXV2_comfy), 
 | `Connector dev` | bf16 | 2.86 GB | [Link](https://huggingface.co/Kijai/LTXV2_comfy/resolve/main/text_encoders/ltx-2-19b-embeddings_connector_dev_bf16.safetensors), [Vantage](https://huggingface.co/vantagewithai/LTX-2-Split/resolve/main/text_encoder/ltx-2-19b-text_encoder.safetensors) |
 | `Connector distilled` | bf16 | 2.86 GB | [Link](https://huggingface.co/Kijai/LTXV2_comfy/resolve/main/text_encoders/ltx-2-19b-embeddings_connector_distill_bf16.safetensors) |
 
----
+<p id="lora" align="center">◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆</p>  
 
 ## LoRA
 *   [LTX-2-19b-LoRA-SPROUT](https://huggingface.co/oumoumad/LTX-2-19b-LoRA-SPROUT)
@@ -253,7 +259,7 @@ Separated LTX2 checkpoint by [Kijai](https://huggingface.co/Kijai/LTXV2_comfy), 
   * [`Camera Control: static`](https://huggingface.co/Lightricks/LTX-2-19b-LoRA-Camera-Control-Static/blob/main/ltx-2-19b-lora-camera-control-static.safetensors)
 
 
----
+<p id="wf" align="center">◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆</p>  
 
 ##  Workflow & Technical Notes
 
